@@ -16,7 +16,6 @@ public class MaxSliceSum
 		int len; //Length of Array
 		int [] arr; //Array of Integers
 		int sngSum; //Max Single Slice Sum
-		int dblSum; //Max Double Slice Sum
 		Slice Values = new Slice(); //Class With Function that Finds Max Slice
 		
 		//Enter and Set Array Length
@@ -34,11 +33,9 @@ public class MaxSliceSum
 		
 		cin.close(); //No More Inputs Needed
 		sngSum = Values.getSingleMaxSum(arr); //Get Max Sum for Single Slice
-		dblSum = Values.getDoubleMaxSum(arr); //Get Max Sum for Double Slice
 		System.out.println(); //Print Line Space
 		
 		//Print Results
 		System.out.println("The maximum possible single slice sum is "+sngSum+".");
-		System.out.println("The maximum possible double slice sum is "+dblSum+".");
 	}
 }
